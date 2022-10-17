@@ -4,7 +4,7 @@ import InputField from "./InputField";
 
 const Personal = ({ personalInfo, onChange }) => {
   return (
-    <div className = "personalInformation">
+    <>
       <Section title="Personal Information:">
         <InputField
           id="name"
@@ -28,7 +28,7 @@ const Personal = ({ personalInfo, onChange }) => {
           onChange={(e) => onChange(e)}
         />
       </Section>
-    </div>
+    </>
   );
 };
 

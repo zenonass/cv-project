@@ -1,5 +1,4 @@
 import React from "react";
-import Section from "./Section";
 import Personal from "./Personal"
 import Education from "./Education";
 import Experience from "./Experience";
