@@ -4,6 +4,7 @@ import CVForm from './components/CVForm';
 import Footer from './components/Footer'
 import emptyCV from './components/ExampleCV';
 import CVPreview from './components/CVPreview';
+import './css/main.css'
 
 function App() {
   const [cv, setCv] = useState(emptyCV)
@@ -44,13 +45,15 @@ function App() {
   return (
     <div class="App">
       <Header />
-      <CVForm 
-        cv = {cv}
-        onChangePersonal = {handleChangePersonal}
-        onChangeEducation = {handleChangeEducation}
-        onChangeExperience = {handleChangeExperience}
-      />
-      <CVPreview cv = {cv} />
+      <div class="cv-wrapper">
+        <CVForm 
+          cv = {cv}
+          onChangePersonal = {handleChangePersonal}
+          onChangeEducation = {handleChangeEducation}
+          onChangeExperience = {handleChangeExperience}
+        />
+        <CVPreview cv = {cv} />
+      </div>
       <Footer />
     </div>
   );
